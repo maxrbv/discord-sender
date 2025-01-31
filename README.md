@@ -23,19 +23,19 @@ discord:
       token: токен | asdasdasd234234
       channel_id: id канала | 37491294124
       messages: имя txt файла | messages.txt
-      timeout: пауза между сообщениями | 300
+      timeout: пауза между сообщениями в секундах | 300
       proxy: прокси | 'http://юзер:пароль@ip:порт'
     - name: имя | maxrbv
       token: токен | asdasdasd234234
       channel_id: id канала | 37491294124
       messages: имя txt файла | messages.txt
-      timeout: пауза между сообщениями | 300
+      timeout: пауза между сообщениями в секундах | 300
       proxy: прокси | 'http://юзер:пароль@ip:порт'
 ```
 
 ### Сообщения
 
-Сообщения находятся в файле `messages.txt`
+Сообщения находятся в файле `assets/messages.txt`
 
 ```txt
 Тут
