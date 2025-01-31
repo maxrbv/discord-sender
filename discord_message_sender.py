@@ -18,10 +18,13 @@ class DiscordMessageSender(Thread):
         self._init_data()
         self._discord_api_url = 'https://discord.com/api/v9'
         self._messages_count = 0
-        self._proxies = {
-            'http': self._cfg.proxy,
-            'https': self._cfg.proxy
-        }
+        if self._cfg.proxy:
+            self._proxies = {
+                'http': self._cfg.proxy,
+                'https': self._cfg.proxy
+            }
+        else:
+            self._proxies = None
 
     def run(self):
         while True:

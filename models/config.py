@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 
 from pydantic import BaseModel
 from pydantic_yaml import YamlModel
@@ -10,8 +10,8 @@ class DiscordData(BaseModel):
     channel_id: str
     messages: str
     timeout: int
-    proxy: str
-    
+    proxy: Optional[str]
+
 
 class Discord(BaseModel):
     profiles: List[DiscordData]
